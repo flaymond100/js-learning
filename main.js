@@ -85,17 +85,27 @@ console.log(Number.isInteger(165));
 
 // Задание к уроку 1.2.2.
 // –– Объявите переменную myFood со значением 'sushi';
+var myFood = "sushi";
 // –– Объявите переменную numOfRollSlices со значением 6;
+var numOfRollSlices = 6;
 // –– Полученные значения выведите в консоль.
+console.log(myFood, numOfRollSlices);
 
 // Задание к уроку 1.2.3.
 // –– Объявите переменную let с именем iKnowJs и присвойте значение false;
+let iKnowJs = false;
 // –– Выведите значение в консоль
+console.log(iKnowJs);
 // –– Затем присвойте переменной значение true и снова выведите в консоль.
+iKnowJs = true;
+console.log(iKnowJs);
 
 // Задание к уроку 1.2.4.
 // –– объявите константу myName и присвойте ей значение с вашим именем;
+const myName = "Konstantyn";
 // –– переприсвоить значение константы и посмотреть в консоль. Должна быть ошибка (TypeError: Assignment to constant variable.).
+myName = "Gesha";
+console.log(myName);
 
 // Задание к уроку 1.2.5
 
@@ -105,10 +115,10 @@ let multiplyMe = 32; // умножь на 3
 let quarterMe = 1152; // раздели на 3
 
 // Используйте сокращенные математические операторы ниже
-
-
-
-
+plusMe += 10;
+subTrackMe -= 100;
+multiplyMe *= 3;
+quarterMe /= 3;
 
 
 // Проверь результат ниже
@@ -125,20 +135,30 @@ console.log('The value of quarterMe:', quarterMe);
 let bitcoin = 10000;
 let ethereum = 300;
 
+bitcoin ++;
+ethereum --;
+
 // Задание к уроку 1.2.7
 
 // Создайте переменную с именем myPet и присвойте ей значение – название вашего любимого животного (cat | dog | parrot)
+var myPet = "dog";
 // Сделайте вывод в консоль строки 'My favourite pet is ' и значение вашей переменной, используя конкатенацию строк
+console.log('My favourite pet is ' + dog + ".")
 
 // Задание к уроку 1.2.8
 
 // Создайте 2 переменных: myName и myCity, присвойте им значения.
+var myName = "Konstantyn";
+var myCity = "Kyiv";
 // В консоль выведите сообщение, My name is.. I am from .., используя интерполяцию строк с переменными.
-
+console.log(`My name is ${myName}. I am from ${myCity}.`);
 // Задание к уроку 1.2.9
 
 // вывести в консоль тип переменной
 let englishLesson = 'London is the capital of Great Britain';
+console.log(typeof englishLesson);
 // переприсвоить переменную со значением 7
+var randomNumber = 7;
 // еще раз вывести в консоль тип переменной
+console.log(typeof randomNumber);
 // в первом случае должно быть string, а во  втором number
