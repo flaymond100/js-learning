@@ -16,7 +16,9 @@ console.log("25");
 // – Добавить комменарий перед первым выводом в консоль;
 // – Закоментировать все выводы в консоль, кроме первого.*/
 
-// console.log('Я умею комментировать строчки кода в JS');
+
+// Вот теперь то я умею комментить :)
+console.log('Я умею комментировать строчки кода в JS');
 /*console.log('Эта строка лишняя');
 console.log('И эта');
 console.log('Да, убери же ты их наконец!!!');*/
@@ -26,9 +28,9 @@ console.log('Да, убери же ты их наконец!!!');*/
 
 console.log('/*Значение*/', typeof('/*Значение*/'));
 
-console.log("number", typeof 21);
+console.log(21, typeof 21);
 
-console.log("string", typeof "Hello World");
+console.log("Hello, World", typeof "Hello, World");
 
 console.log("boolean", typeof true);
 
@@ -48,7 +50,7 @@ console.log (25+3);
 // – вычтите из текущего года год вашего рождения;
 console.log(2020-1994);
 // – умножьте число Пи на 100;
-console.log(3.14*100);
+console.log(Math.PI*100);
 // – разделите 10 на 3.
 console.log(10/3);
 
@@ -67,7 +69,9 @@ console.log('Share your knowledge'.length);
 
 // Задание к уроку 1.1.8
 // –– приведите строку ‘My name is’ + ‘Your name’ к UpperCase (все буквы большие);
-console.log("My name is" + "Konstantyn".toUpperCase());
+var string = "My name is " + "Konstantyn";
+string = string.toUpperCase();
+console.log(string);
 // –– учимся гуглить, на сайте https://developer.mozilla.org/ находим метод объекта String,
 // который удаляет лишние пробелы из строки ‘     I love study JS on Smartians platform    ’.
 console.log('     I love study JS on Smartians platform    .trim());
@@ -75,9 +79,12 @@ console.log('     I love study JS on Smartians platform    .trim());
 
 // Задание к уроку 1.1.9
 // –– вывести на экран случайное число от 0 до 200
-console.log(Math.random()*200);
+var randomNumber = Math.random()*200;
+console.log(Math.round(randomNumber)); //решил округлить, что бы число красиво получалось))
+
 // –– найдите подходящий метод у объекта Math, который вернет наименьшее целое число, большее или равное полученному выше числу.
-console.log(Math.ceil(164.55521723017443));
+var ceilNumber = Math.ceil(randomNumber);
+console.log(ceilNumber);
 
 // –– с помощью совйства у объекта Number, проверте что ваше полученное число –– целое.
 console.log(Number.isInteger(165));
